@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Cheatsheet documenting HTML tables, tags, and attributes"
+    />
+    <title>HTML Tables Cheatsheet</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <main class="wrapper" role="main">
+      <!-- Intro Section -->
+      <section class="intro">
+        <h1>HTML Tables</h1>
+        <p>
+          The <span class="code">&lt;table&gt;</span> element represents
+          <span>tabular data</span> (information presented in a two-dimensional
+          table comprised of <span>rows</span> and <span>columns</span> of
+          <span>cells</span>
+          containing data).
+        </p>
+        <p>
+          Tables should only be used for <span>tabular data</span>, not layout.
+        </p>
+      </section>
+
+      <!-- Basic Structure Section-->
+      <section class="structure">
+        <h2>Basic Structure</h2>
+        <p>
+          A <span>table</span> is defined with the
+          <span class="code">&lt;table&gt;</span> tag, and contains
+          <span>rows</span> (<span class="code">&lt;tr&gt;</span>), which in
+          turn contain <span>cells</span> (<span class="code">&lt;td&gt;</span>
+          for data, <span class="code">&lt;th&gt;</span> for headers). A table
+          <span>cell</span> can contain all sorts of HTML elements: text,
+          images, lists, links, other tables, etc.
+        </p>
+        <br />
+        <p>
+          The <span class="code">&lt;thead&gt;</span> element is used in
+          conjunction with the <span class="code">&lt;tbody&gt;</span> and
+          <span class="code">&lt;tfoot&gt;</span> elements to specify each part
+          of a table (<span>header</span>, <span>body</span>,
+          <span>footer</span>). These elements don't change the visual order but
+          help with semantics.
+        </p>
+        <br />
+        <p>
+          A <span class="code">&lt;caption&gt;</span> element with a clear and
+          concise value describes the purpose of the table. This can help people
+          who navigate with the aid of assistive technology such as a screen
+          reader.
+        </p>
+      </section>
+
+      <!-- Table Tags Section-->
+      <section class="tags">
+        <h2>Table Tags</h2>
+        <table>
+          <caption>
+            Common HTML Table Tags
+          </caption>
+          <thead>
+            <tr>
+              <th scope="col">Tag</th>
+              <th scope="col">Name</th>
+              <th scope="col">Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><span class="code">&lt;table&gt;</span></td>
+              <td class="name">Table</td>
+              <td>The element that wraps the whole table.</td>
+            </tr>
+            <tr>
+              <td><span class="code">&lt;thead&gt;</span></td>
+              <td class="name">Table Head</td>
+              <td>Groups the header rows.</td>
+            </tr>
+            <tr>
+              <td><span class="code">&lt;tbody&gt;</span></td>
+              <td class="name">Table Body</td>
+              <td>Groups the body rows.</td>
+            </tr>
+            <tr>
+              <td><span class="code">&lt;tfoot&gt;</span></td>
+              <td class="name">Table Foot</td>
+              <td>Groups the footer rows.</td>
+            </tr>
+            <tr>
+              <td><span class="code">&lt;th&gt;</span></td>
+              <td class="name">Table Header Cell</td>
+              <td>
+                Defines a cell as the header of a group of table cells and may
+                be used as a child of <span class="code">&lt;tr&gt;</span>.
+              </td>
+            </tr>
+            <tr>
+              <td><span class="code">&lt;tr&gt;</span></td>
+              <td class="name">Table Row</td>
+              <td>
+                The table row container (contains
+                <span class="code">&lt;th&gt;</span> or
+                <span class="code">&lt;td&gt;</span> cells).
+              </td>
+            </tr>
+            <tr>
+              <td><span class="code">&lt;td&gt;</span></td>
+              <td class="name">Table Data</td>
+              <td>The table data cell.</td>
+            </tr>
+            <tr>
+              <td><span class="code">&lt;caption&gt;</span></td>
+              <td class="name">Table Caption</td>
+              <td>
+                Defines the caption (or title) of a table, providing an
+                accessible description.
+              </td>
+            </tr>
+            <tr>
+              <td><span class="code">&lt;colgroup&gt;</span></td>
+              <td class="name">Table Column Group</td>
+              <td>Defines a group of columns within a table.</td>
+            </tr>
+            <tr>
+              <td><span class="code">&lt;col&gt;</span></td>
+              <td class="name">Table Column</td>
+              <td>Defines one or more columns in a column group.</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- Table Attributes Section-->
+      <section class="attributes">
+        <h2>Table Attributes</h2>
+        <table>
+          <caption>
+            Common HTML Table Attributes
+          </caption>
+          <thead>
+            <tr>
+              <th scope="col">Attribute</th>
+              <th scope="col">Name</th>
+              <th scope="col">Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><span class="code">colspan</span></td>
+              <td class="name">Column Span</td>
+              <td>
+                Defines how many <span>columns</span> a
+                <span class="code">&lt;th&gt;</span> or
+                <span class="code">&lt;td&gt;</span> element should span.
+              </td>
+            </tr>
+            <tr>
+              <td><span class="code">rowspan</span></td>
+              <td class="name">Row Span</td>
+              <td>
+                Defines how many <span>rows</span> a
+                <span class="code">&lt;th&gt;</span> or
+                <span class="code">&lt;td&gt;</span> element should span.
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <p>HTML Tables Cheatsheet Project</p>
+      <p>Created by Cristina Prodan &copy; 2025</p>
+    </footer>
+  </body>
+</html>
