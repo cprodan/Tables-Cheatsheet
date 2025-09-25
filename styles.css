@@ -40,7 +40,6 @@ body {
 .structure:hover,
 .tags:hover,
 .attributes:hover {
-  transform: translateY(-1px);
   box-shadow: 14px 14px 25px rgba(107, 75, 191, 0.35);
   border-color: #8d6bd9;
   transition: transform 0.5s ease-out, box-shadow 0.5s ease-out, border-color 0.5s ease-out;
